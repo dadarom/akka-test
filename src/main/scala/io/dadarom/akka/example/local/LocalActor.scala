@@ -1,4 +1,4 @@
-package com.madhukaraphatak.akka.local
+package io.dadarom.akka.example.local
 
 import java.io.File
 

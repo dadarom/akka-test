@@ -1,5 +1,8 @@
-Simple Akka Remote example in Scala
-===================================
 
-This repository contains a simple example for akka remote. It shows how to create both remote and local actors in same
-project.It also shows how different configurations are read and interpreted.
+## akka-test
+
+
+## thanks to
+[Parallelism simplified by Akka in Java](http://blog.coralic.nl/2013/08/30/parallelism-simplified-by-akka-in-java/)
+[A Simple Akka Remote example](http://blog.madhukaraphatak.com/simple-akka-remote-example/)
+[Akka-Essentials](https://github.com/write2munish/Akka-Essentials)

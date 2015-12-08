@@ -1,18 +1,22 @@
-package com.madhukaraphatak.akka.remote
+package io.dadarom.akka.example.remote
 
 import java.io.File
 
 import akka.actor._
+import io.dadarom.akka.server.actors.MasterActor
 import com.typesafe.config.ConfigFactory
 
 /**
  * Remote actor which listens on port 5150
  */
 class RemoteActor extends Actor {
+  val masterActor = context.actorOf(Props[MasterActor], "masterActor");
+
   override def receive: Receive = {
     case msg: String => {
-      println("remote received " + msg + " from " + sender)
-      sender ! "hi"
+      println("Received " + msg + " from " + sender)
+//      sender ! msg
+      masterActor ! msg
     }
     case _ => println("Received unknown msg ")
   }
