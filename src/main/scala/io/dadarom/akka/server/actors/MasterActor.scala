@@ -1,7 +1,8 @@
 package io.dadarom.akka.server.actors
 
 import akka.actor.{Actor, ActorRef, Props, actorRef2Scala}
-import com.sun.corba.se.spi.orbutil.fsm.Guard.Result
+//import io.dadarom.akka.server._
+import io.dadarom.akka.server.{Result, ReduceData}
 
 class MasterActor extends Actor {
   val aggregateActor: ActorRef = context.actorOf(Props[AggregateActor], name = "aggregate")
@@ -19,9 +20,9 @@ class MasterActor extends Actor {
     }
 
     case default => {
-      println("-------------")
+      println("------default-------")
       println(default)
-      println("-------------")
+      println("------default-------")
     }
 
   }

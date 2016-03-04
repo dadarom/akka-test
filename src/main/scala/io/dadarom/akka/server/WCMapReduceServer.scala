@@ -28,9 +28,14 @@ class WCMapReduceServer extends Actor {
 //      sender ! msg
 
       if (msg.equals("EOF")){
-        println("send Result");
+        println("===================send new Result===================");
         masterActor ! new Result
+        println("===================send new Result()===================");
+        masterActor ! new Result()
+        println("===================send Result===================");
         masterActor ! Result
+        masterActor ! Result
+
       }
       else
         masterActor ! msg

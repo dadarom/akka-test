@@ -8,7 +8,7 @@
     <groupId>io.dadarom</groupId>
     <artifactId>akka-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
